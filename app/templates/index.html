@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Alec Goodner</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<style type="text/css">
+
+
+	</style>
+	<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+	<script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</head>
+<body>
+	
+	<header id="menu-container">
+		<div class="row">
+			<div class="col">
+				<div class="content left auxillary">
+					<span style="opacity:0.8;"><i>"{{ affirmation }}."</i>
+					<a href="https://github.com/annthurium/affirmations" target="_blank">
+						<span class="material-icons color-icon" style="vertical-align: text-top; font-size:1em;">help_outline</span>
+					</a>
+					</span>
+				</div>
+			</div>
+			<div class="col">
+				<div class="content center">
+						<button id="print-button" onclick="window.print()">Print</button>
+					</div>
+				</div>
+			<div class="col" style="justify-content: center;">
+				<div class="content right" id="day-night-slider">
+					<div style="display:flex; align-items:center; justify-content:center;">
+						<span id="dark-mode-icon" class="material-icons color-icon" style="color:rgba(255,255,255,1);">dark_mode</span>
+						<label class="switch">
+							<input type="checkbox" id="color-mode-checkbox">
+							<span class="slider round"></span>
+						</label>
+						<span id="light-mode-icon" class="material-icons color-icon" style="color:rgba(255,255,255,1);">light_mode</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="container">
+		<div class="row section">
+			<div class="col">
+				<div class="content heading"><span>{{ resume.name }}</span></div>
+				<div class="content auxillary left"><span>{{ resume.bio }}</span></div>
+			</div>
+			<div class="col contacts">
+				<div class="row">
+					<div class="col">
+						{% for contact in resume.contacts %}
+						<div class="content auxillary right"><span>{{ resume.contacts[contact] }}</span></div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- CAREER SUMMARY -->
+		<div class="row section">
+			<div class="col">
+				<!-- Heading -->
+				<div class="row">
+					<div class="col">
+						<div class="content heading" id="career-summary"><span>Career Summary</span></div>
+					</div>
+				</div>
+				{% for career in resume.careers %}
+					<div class="row">
+						<div class="col">
+							<div class="content left primary"><span>{{ career["title"] }}</span></div>
+							<div class="content left secondary"><span>{{ career["company"] }} • {{ career["location"] }}</span></div>
+						</div>
+						<div class="col">
+							<div class="content right secondary"><span>{{ career["dates"] }}</span></div>
+							
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="content left auxillary"><span>{{ career["description"] }}</span></div>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+		<!-- OTHER WORK -->
+		<div class="row section">
+			<div class="col" s>
+				<!-- Heading -->
+				<div class="row">
+					<div class="col">
+						<div class="content heading" id="other-work"><span>Other Work Experiences</span></div>
+					</div>
+				</div>
+				{% for job in resume.otherwork %}
+				<div class="row">
+					<div class="col">
+						<div class="content left primary"><span>{{ job["title"] }}</span></div>
+						<div class="content left secondary"><span>{{ job["company"] }}</span></div>
+					</div>
+					<div class="col">
+						<div class="content right auxillary"><span>{{ job["location"] }}</span></div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+		<!-- EDUCATION -->
+		<div class="row section">
+			<div class="col">
+				<!-- Heading -->
+				<div class="row">
+					<div class="col">
+						<div class="content heading" id="education"><span>Education</span></div>
+					</div>
+				</div>
+				{% for entry in resume.education %}
+				<div class="row">
+					<div class="col">
+						<div class="content left primary"><span>{{ entry.degree }}</span></div>
+						<div class="content left secondary"><span>{{ entry.schoolname }} • {{ entry.graduationdate }}</span></div>
+					</div>
+					<div class="col">
+						<div class="content right auxillary"><span>{{ entry.schooladdress }}</span></div>
+						<div class="content right auxillary"><span>{{ entry.schoolphone }}</span></div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+		<!-- TECHNICAL SKILLS -->
+		<div class="row section" id="technical">	
+			{% for category in resume.skills %}
+			<div class="col">
+				<div class="row">
+					<div class="content heading"><span>{{ category }}</span></div>
+				</div>
+				<div class="row">
+					<div class="col">
+						{% for item in resume.skills[category] %}
+							<div class="content left auxillary"><span>{{ item }}</span></div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+
+		</div>
+		<!--
+		<div class="row section">
+			<div class="col">
+				<div class="row">
+					{% for category in resume.skills %}
+					<div class="col">
+						<div class="content heading"><span>{{ category }}</span></div>
+					</div>
+					{% endfor %}
+				</div>
+				<div class="row">
+					{% for category in resume.skills %}
+					<div class="col">
+						{% for item in resume.skills[category] %}
+							<div class="content left auxillary"><span>{{ item }}</span></div>
+						{% endfor %}
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+			
+		</div>-->
+	</div>
+	<script>
+		console.log("{{ affirmation }}");
+
+		var colors = {
+			"light":  {
+				"background":"#fdf9f3",
+				"heading": {
+					"background":"#ff6546",
+					"accent":"#ef5536",
+					"color":"#fdf9f3"
+				},
+				"primary":"#ff6546",
+				"secondary":"#222",
+				"auxillary":"#666",
+			},
+			"dark": {
+				"background":"#262626",
+				"heading": {
+					"background":"#6032eb",
+					"accent":"#5022db",
+					"color":"#fdf9f3"
+				},
+				"primary":"#6032eb",
+				"secondary":"#ddd",
+				"auxillary":"#999",
+			}
+		}
+/*
+		$("#menu-container").append(`
+			<div class="row">
+				<div class="col">
+					<div class="row" style="width: 150%;">
+						<div class="content left auxillary">
+							<span style="opacity:0.8;"><i>"{{ affirmation }}."</i>
+							<a href="https://github.com/annthurium/affirmations" target="_blank">
+								<span class="material-icons color-icon" style="vertical-align: text-top; font-size:1em;">help_outline</span>
+							</a>
+							</span>
+
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="content right">
+						<div style="display:flex; align-items:center; justify-content:center;">
+							<span id="dark-mode-icon" class="material-icons color-icon" style="color:rgba(255,255,255,1);">dark_mode</span>
+							<label class="switch">
+								<input type="checkbox" id="color-mode-checkbox">
+								<span class="slider round"></span>
+							</label>
+							<span id="light-mode-icon" class="material-icons color-icon" style="color:rgba(255,255,255,1);">light_mode</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		`);*/
+
+		function hex_to_rgb(hex) {
+		    var m = hex.match(/^#?([\da-f]{2})([\da-f]{2})([\da-f]{2})$/i);
+		    return {
+		        r: parseInt(m[1], 16),
+		        g: parseInt(m[2], 16),
+		        b: parseInt(m[3], 16)
+		    };
+		}
+
+		
+		$("#color-mode-checkbox").change(function() {
+			if(document.getElementById("color-mode-checkbox").checked) { // Light Mode
+				$("body").css("background-color", colors.light.background);
+				$("#container").css("background-color", colors.light.background);
+				$(".color-icon").css("color", colors.light.auxillary);
+				$("#print-button").css({
+					"color":colors.light.heading.color,
+					"background-color":colors.light.heading.background,
+				})
+				$("#menu-container").css("background-color", colors.light.background);
+
+				$(".heading").css("background-color", colors.light.heading.background);
+				$(".heading").css("border-top-color", colors.light.heading.accent);
+				$(".heading").css("color", colors.light.heading.color);
+
+				$(".primary").css("color", colors.light.primary);
+				$(".secondary").css("color", colors.light.secondary);
+				$(".auxillary").css("color", colors.light.auxillary);
+			} else { // Dark Mode
+				$("body").css("background-color", colors.dark.background);
+				$("#container").css("background-color", colors.dark.background);
+				$(".color-icon").css("color", colors.dark.auxillary);
+				$("#print-button").css({
+					"color":colors.dark.heading.color,
+					"background-color":colors.dark.heading.background,
+				})
+				$("#menu-container").css("background-color", colors.dark.background);
+
+				$(".heading").css("background-color", colors.dark.heading.background);
+				$(".heading").css("border-top-color", colors.dark.heading.accent);
+				$(".heading").css("color", colors.dark.heading.color);
+
+				$(".primary").css("color", colors.dark.primary);
+				$(".secondary").css("color", colors.dark.secondary);
+				$(".auxillary").css("color", colors.dark.auxillary);
+			}
+		})
+		$("#color-mode-checkbox").click();
+
+		$("head").append(`
+		<style>
+			/* The switch - the box around the slider */
+			.switch {
+			  position: relative;
+			  display: inline-block;
+			  width: 60px;
+			  height: 34px;
+			}
+
+			/* Hide default HTML checkbox */
+			.switch input {
+			  opacity: 0;
+			  width: 0;
+			  height: 0;
+			}
+
+			/* The slider */
+			.slider {
+			  position: absolute;
+			  cursor: pointer;
+			  top: 0;
+			  left: 0;
+			  right: 0;
+			  bottom: 0;
+			  background-color: ${colors.dark.heading.background};
+			  -webkit-transition: .4s;
+			  transition: .4s;
+			}
+
+			.slider:before {
+			  position: absolute;
+			  content: "";
+			  height: 26px;
+			  width: 26px;
+			  left: 4px;
+			  bottom: 4px;
+			  background-color: white;
+			  -webkit-transition: .4s;
+			  transition: .4s;
+			}
+
+			input:checked + .slider {
+			  background-color: ${colors.light.heading.background};
+			}
+
+			input:focus + .slider {
+			  box-shadow: 0 0 1px #2196F3;
+			}
+
+			input:checked + .slider:before {
+			  -webkit-transform: translateX(26px);
+			  -ms-transform: translateX(26px);
+			  transform: translateX(26px);
+			}
+
+			/* Rounded sliders */
+			.slider.round {
+			  border-radius: 34px;
+			}
+
+			.slider.round:before {
+			  border-radius: 50%;
+			} 
+
+			.color-icon {
+				padding: 0 10px;
+			}
+		</style`);
+
+
+		
+
+	</script>
+</body>
+</html>

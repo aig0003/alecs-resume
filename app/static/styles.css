@@ -1,0 +1,184 @@
+body {
+	margin:  0;
+	padding:  0;
+	font-family: verdana;
+	background-color: black;
+}
+
+#menu-container {
+	/*position: fixed;*/
+	top: 0px;
+	width: 100%;
+	background-color: #444;
+	min-height: 5em;
+	/*max-height: 5em;*/
+	display: flex;
+	align-items: center;
+}
+
+#container {
+	max-width: 1080px;
+	width: 100%;
+	background-color: #444;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: auto;
+}
+
+.row {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+
+}
+
+.col {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.content {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.content > span {
+	padding: 10px;
+}
+
+.left {
+	align-items: flex-start;
+	text-align: left;
+}
+
+.center {
+	align-items: center;
+	text-align: center;
+}
+
+.right {
+	align-items: flex-end;
+	text-align: right;
+}
+
+.heading {
+	background-color: #888;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 1.5em;
+	border-top: 5px solid #ccc;
+}
+
+.primary {
+	font-weight: bold;
+	font-size: 1em;
+	color: #fff;
+
+}
+
+.secondary {
+	font-weight: normal;
+	font-size: 1em;
+	color: #ccc;
+}
+
+.auxillary {
+	font-size: 0.9em;
+	color: #888;
+}
+
+.contacts {
+	width:50%;
+}
+
+#print-button {
+	width: 80%;
+	padding: 10px;
+	font-size: 1em;
+	background-color: white;
+	outline: none;
+	border: none;
+	color: black;
+	border-radius: 50%;
+	cursor: pointer;
+	border-radius: 34px;
+	transition: 0.05s all linear;
+}
+
+#print-button:before {
+  	border-radius: 50%;
+}
+
+#print-button:hover {
+	filter: brightness(0.95);
+}
+
+#print-button:active {
+	filter: brightness(1.1);
+}
+
+
+@media (max-width: 600px) {
+	.heading {
+		font-size: 1.2em;
+	}
+
+	.primary {
+		font-size: 0.9em;
+
+	}
+
+	.secondary {
+		font-size: 0.8em;
+	}
+
+	.auxillary {
+		font-size: 0.8em;
+	}
+
+	.section {
+		flex-direction: column-reverse;
+	}
+
+	.contacts {
+		width: 100%;
+	}
+
+	.contacts > .row {
+		flex-direction: column;
+	}
+
+	.contacts > .row > .col {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.contacts > .row > .col > .content {
+		width: 50%;
+		text-align: center;
+		align-items:  center;
+	}
+
+	#menu-container > .row {
+		flex-direction: column;
+	}
+
+	#menu-container > .row > .col > .content {
+		align-items: center;
+		padding: 5px;
+	}
+
+	#technical {
+		flex-direction: column-reverse;
+	}
+
+}
