@@ -9,7 +9,7 @@ resume = {
 	"contacts": {
 		"email":"alec.goodner@gmail.com",
 		"phone":"404-771-7074",
-		"city":"Madison, AL",
+		"city":"Franklin, TN",
 		"linkedin":"linkedin.com/in/aig0003"
 	},
 	"careers": [
