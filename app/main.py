@@ -16,7 +16,7 @@ resume = {
 		{
 			"company":"CodeWizardsHQ",
 			"location":"Austin, TX (Fully Remote)",
-			"title": "Cirriculum Instructor",
+			"title": "Curriculum Instructor",
 			"dates":"June 2020 - Present",
 			"description":"My role is to study, teach, and assist in developing a full-stack computer programming curriculum aimed to educate children from elementary to high school levels through live, online courses. I coordinate remotely with several teams to the develop new curriculum, provide quality education to students, and grow alongside with fellow instructors.",
 		},
