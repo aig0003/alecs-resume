@@ -5,20 +5,27 @@ app = Flask(__name__)
 
 resume = {
 	"name":"Alec Goodner",
-	"bio":"Well-rounded & motivated to grow. I’ve had experience in higher education, logistics management, marketing, design, computer programming, education, and more. I aim to elevate myself as well as my peers with effective communication & teamwork.",
+	"bio":"Developer with a formal foundation in software engineering and a diverse technical skill set. Committed to learning and growing along with my peers, whether through teaching, coding, art, or other innovative avenues.",
 	"contacts": {
 		"email":"alec.goodner@gmail.com",
-		"phone":"404-771-7074",
-		"city":"Franklin, TN",
+		"phone":"(404) 771-7074",
+		"city":"Madison, AL",
 		"linkedin":"linkedin.com/in/aig0003"
 	},
 	"careers": [
 		{
+			"company":"Xapiens International Group",
+			"location": "Guaynabo, PR (Remote)",
+			"title": "Jr. Software Developer",
+			"dates": "June 2022 - Present",
+			"description": "I handled a wide range of responsibilities, performing security and audit certification services for a wide range of clients. I would develop and employ a variety of tools and techniques to perform requested tasks, such as: creating scripts and queries to read, convert and obtain data from a large database and large client user reports, utilize AI tools to debug and navigate communication barriers with a primarily Spanish-speaking clientelle, and perform a variety of database maintenance and validation tasks to ensure that the client information was handled in a very precise and secure manner."
+		},
+		{
 			"company":"CodeWizardsHQ",
-			"location":"Austin, TX (Fully Remote)",
+			"location":"Austin, TX (Remote)",
 			"title": "Curriculum Instructor",
-			"dates":"June 2020 - Present",
-			"description":"My role is to study, teach, and assist in developing a full-stack computer programming curriculum aimed to educate children from elementary to high school levels through live, online courses. I coordinate remotely with several teams to the develop new curriculum, provide quality education to students, and grow alongside with fellow instructors.",
+			"dates":"June 2020 - April 2022",
+			"description":"My role was to study, teach, and aid in the development of a full-stack computer programming curriculum aimed to educate children from K-12 levels through live, online courses. I coordinated remotely with several teams to the develop new courses and curriculum materials, provided virtual but high-quality education and feedback to students, and generally assisted the company and fellow instructors.",
 		},
 		{
 			"company":"Tiger Rags Inc",
@@ -75,33 +82,35 @@ resume = {
 		}
 	],
 	"skills": {
-		"Computer Systems": [
+		"Software Experience": [
 			"MacOS, Windows 7/10, Linux",
-			"Microsoft Office Suite",
+			"Git/Github",
+			"Microsoft & LibreOffice Suite",
 			"Google Drive (Docs, Sheets, Slides, Forms)",
 			"Adobe Photoshop & Illustrator",
 			"Magento 1.9",
 			"Mailchimp",
-			"Git/Github",
 			"Slack",
-			"Basecamp"
+			"Shortcut, Basecamp"
 		],
-		"Programming Languages": [
+		"Language Experience": [
 			"Python (Flask)",
-			"HTML5, CSS3 (Bootstrap 5)",
-			"JavaScript (jQuery)",
 			"MySQL, SQLite3",
+			"PHP/Perl",
+			"HTML5, CSS3 (Bootstrap 5)",
+			"JavaScript (Node, React, jQuery)",
 			"AFRAME",
 			"Java",
 			"C++"
 		],
 		"Other Experiences": [
-			"3D Printing & Modeling (TinkerCAD, Google SketchUp)",
-			"Graphic Design",
-			"Raspberry Pi",
+			"Computer Game Design (Unity3D, Godot 4)",
+			"3D Printing & Modeling (TinkerCAD, Blender)",
+			"Graphic Design (Photoshop, GIMP)",
+			"Misc. Raspberry Pi Projects",
 			"Plex Media Server",
-			"Game Design (Tabletop, Cards, Video Games)",
-			"Music Production (Garageband, Logic Pro X)",
+			"Tabletop Game Design (TTRPGS, Card & Board Games)",
+			"Music Production (Garageband, Logic Pro X, Audacity)",
 			"Online Streaming"
 		]
 	}
@@ -112,5 +121,5 @@ def home():
 	try:
 		affirmation = requests.get("https://www.affirmations.dev/").json()["affirmation"]
 	except:
-		affirmation = "Be the person your dog thinks you are" 
+		affirmation = "Be the person your dog thinks you are." 
 	return render_template("index.html", resume=resume, affirmation=affirmation)

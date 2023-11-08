@@ -16,6 +16,12 @@ body {
 	align-items: center;
 }
 
+@media print {
+	#menu-container{
+		display: none;
+	}
+}
+
 #container {
 	max-width: 1080px;
 	width: 100%;

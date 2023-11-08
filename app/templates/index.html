@@ -64,6 +64,7 @@
 				</div>
 			</div>
 		</div>
+
 		<!-- CAREER SUMMARY -->
 		<div class="row section">
 			<div class="col">
@@ -92,28 +93,7 @@
 				{% endfor %}
 			</div>
 		</div>
-		<!-- OTHER WORK -->
-		<div class="row section">
-			<div class="col" s>
-				<!-- Heading -->
-				<div class="row">
-					<div class="col">
-						<div class="content heading" id="other-work"><span>Other Work Experiences</span></div>
-					</div>
-				</div>
-				{% for job in resume.otherwork %}
-				<div class="row">
-					<div class="col">
-						<div class="content left primary"><span>{{ job["title"] }}</span></div>
-						<div class="content left secondary"><span>{{ job["company"] }}</span></div>
-					</div>
-					<div class="col">
-						<div class="content right auxillary"><span>{{ job["location"] }}</span></div>
-					</div>
-				</div>
-				{% endfor %}
-			</div>
-		</div>
+		
 		<!-- EDUCATION -->
 		<div class="row section">
 			<div class="col">
@@ -137,6 +117,7 @@
 				{% endfor %}
 			</div>
 		</div>
+
 		<!-- TECHNICAL SKILLS -->
 		<div class="row section" id="technical">	
 			{% for category in resume.skills %}
@@ -154,6 +135,29 @@
 			</div>
 			{% endfor %}
 
+		</div>
+
+		<!-- OTHER WORK -->
+		<div class="row section">
+			<div class="col" s>
+				<!-- Heading -->
+				<div class="row">
+					<div class="col">
+						<div class="content heading" id="other-work"><span>Other Work Experiences</span></div>
+					</div>
+				</div>
+				{% for job in resume.otherwork %}
+				<div class="row">
+					<div class="col">
+						<div class="content left primary"><span>{{ job["title"] }}</span></div>
+						<div class="content left secondary"><span>{{ job["company"] }}</span></div>
+					</div>
+					<div class="col">
+						<div class="content right auxillary"><span>{{ job["location"] }}</span></div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
 		</div>
 		<!--
 		<div class="row section">
@@ -183,6 +187,28 @@
 
 		var colors = {
 			"light":  {
+				"background":"#fdfdfd",
+				"heading": {
+					"background":"#355C7D",
+					"accent":"#558cba",
+					"color":"#fdfdfd"
+				},
+				"primary":"#355C7D",
+				"secondary":"#222",
+				"auxillary":"#666",
+			},
+			"dark": {
+				"background":"#2a363b",
+				"heading": {
+					"background":"#E84A5F",
+					"accent":"#FF847C",
+					"color":"#fdf9f3"
+				},
+				"primary":"#E84A5F",
+				"secondary":"#ddd",
+				"auxillary":"#999",
+			}
+			/*"light":  {
 				"background":"#fdf9f3",
 				"heading": {
 					"background":"#ff6546",
@@ -203,7 +229,7 @@
 				"primary":"#6032eb",
 				"secondary":"#ddd",
 				"auxillary":"#999",
-			}
+			}*/
 		}
 /*
 		$("#menu-container").append(`
@@ -272,7 +298,7 @@
 					"background-color":colors.dark.heading.background,
 				})
 				$("#menu-container").css("background-color", colors.dark.background);
-
+				
 				$(".heading").css("background-color", colors.dark.heading.background);
 				$(".heading").css("border-top-color", colors.dark.heading.accent);
 				$(".heading").css("color", colors.dark.heading.color);
