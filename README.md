@@ -14,5 +14,5 @@ Run Flask: `flask run`
 
 Go to localhost: `http://127.0.0.1:5000`
 
-# resume-2022
-Can view heroku deployed version here: https://resume-2022.herokuapp.com/
+# Deployed Project
+Can view heroku deployed version here: https://alec-goodner-9595f4b5425b.herokuapp.com/
