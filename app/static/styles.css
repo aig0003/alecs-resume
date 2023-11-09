@@ -82,6 +82,8 @@ body {
 	font-weight: bold;
 	font-size: 1.5em;
 	border-top: 5px solid #ccc;
+	margin-top: 10px;
+	font-family: tahoma;
 }
 
 .primary {

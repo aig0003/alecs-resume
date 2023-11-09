@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 
 resume = {
-	"name":"Alec Goodner",
+	"name":"ALEC GOODNER",
 	"bio":"Developer with a formal foundation in software engineering and a diverse technical skill set. Committed to learning and growing along with my peers, whether through teaching, coding, art, or other innovative avenues.",
 	"contacts": {
 		"email":"alec.goodner@gmail.com",
@@ -82,7 +82,7 @@ resume = {
 		}
 	],
 	"skills": {
-		"Software Experience": [
+		"SOFTWARE": [
 			"MacOS, Windows 7/10, Linux",
 			"Git/Github",
 			"Microsoft & LibreOffice Suite",
@@ -93,7 +93,7 @@ resume = {
 			"Slack",
 			"Shortcut, Basecamp"
 		],
-		"Language Experience": [
+		"LANGUAGES": [
 			"Python (Flask)",
 			"MySQL, SQLite3",
 			"PHP/Perl",
@@ -103,7 +103,7 @@ resume = {
 			"Java",
 			"C++"
 		],
-		"Other Experiences": [
+		"OTHER": [
 			"Computer Game Design (Unity3D, Godot 4)",
 			"3D Printing & Modeling (TinkerCAD, Blender)",
 			"Graphic Design (Photoshop, GIMP)",
