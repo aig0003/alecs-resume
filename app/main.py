@@ -32,14 +32,23 @@ resume = {
 			"location":"Austin, TX (Remote)",
 			"title": "Curriculum Instructor",
 			"dates":"June 2020 - April 2022",
-			"description":"My role was to study, teach, and aid in the development of a full-stack computer programming curriculum aimed to educate children from K-12 levels through live, online courses. I coordinated remotely with several teams to the develop new courses and curriculum materials, provided virtual but high-quality education and feedback to students, and generally assisted the company and fellow instructors.",
+			"description":[
+				"Full-Stack Instruction: Educated children from K-12 levels various programming languages and concepts through live, online courses. These courses covered a range of materials, dealing with languages such as Java, Python (+Flask), HTML/CSSS/JS (+JQuery and other libraries), Scratch & SQL; as well as concepts of database management, front & back-end coding, UI design, and more.",
+				"Circulum Development: Assisted the cirriculum lead in developing new cirriculum materials and ensure release deadlines were met."
+			]
+			#"description":"My role was to study, teach, and aid in the development of a full-stack computer programming curriculum aimed to educate children from K-12 levels through live, online courses. I coordinated remotely with several teams to the develop new courses and curriculum materials, provided virtual but high-quality education and feedback to students, and generally assisted the company and fellow instructors.",
 		},
 		{
 			"company":"Tiger Rags Inc",
 			"location":"Auburn, AL",
 			"title":"eCommerce Manager",
 			"dates":"July 2019 - January 2020",
-			"description":"I personally and remotely communicated with various company departments, staff, and customers to ensure success in company projects. General responsibilities included managing the company online store, product catalogs, optimizing/updating social media pages, designing advertising campaigns, handling customer service, as well as tracking merchandise logistics and shipping products."
+			"description":[	
+				"Manage Store Online Catalog: Maintained the store website to ensure the e-store and product catalog was up-to-date, appealing, and accurate. As well as aid in any technical issues dealing with the online tools.",
+				"eCommerce Fulfillment: Handled the packaging and shipping of store merchandise purchased from the online store, ensuring safe and  timely deliveries to customers.",
+				"Social Media Management: Managed various social media accounts as well as create and optimize advertisement campaigns for new and existing products and specials."
+			]
+			#"description":"I personally and remotely communicated with various company departments, staff, and customers to ensure success in company projects. General responsibilities included managing the company online store, product catalogs, optimizing/updating social media pages, designing advertising campaigns, handling customer service, as well as tracking merchandise logistics and shipping products."
 		}
 	],
 	"otherwork":[
