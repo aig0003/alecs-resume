@@ -101,11 +101,12 @@ resume = {
 	"skills": {
 		"SOFTWARE/TOOLS": [
 			"Operating Systems: MacOS, Windows 7/10, Linux (Ubuntu)",
-			"Development Tools: Git/Github",
-			"Office Applications: Microsoft Office, LibreOffice, Google Drive",
-			"Design Applications: Adobe Photoshop & Illustrator",
+			"Editors/IDE's: Visual Studio, Vim, Nano, Sublime Text",
+			"Version Control Software": "Git/Github",
+			"Document Suites: Microsoft Office, LibreOffice, Google Drive",
+			"Graphic Design Applications: Adobe Photoshop & Illustrator",
 			"eCommerce: Magento 1.9, Mailchimp",
-			"Project Management: Slack, Shortcut, Basecamp"
+			"Project Coordination: Slack, Shortcut, Basecamp"
 		],
 		"COMPUTER LANGUAGES": [
 			"Python (Incl. Flask)",
