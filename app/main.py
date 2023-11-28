@@ -3,6 +3,7 @@ import requests
 
 app = Flask(__name__)
 
+# Could be a JSON file
 resume = {
 	"name":"ALEC GOODNER",
 	"bio":"Developer with a formal foundation in software engineering and a diverse technical skill set. Committed to learning and growing along with my peers, whether through teaching, coding, art, or other innovative avenues.",
@@ -18,7 +19,8 @@ resume = {
 			"location": "Guaynabo, PR (Remote)",
 			"title": "Jr. Software Developer",
 			"dates": "June 2022 - Present",
-			"description": "I handled a wide range of responsibilities, performing security and audit certification services for a wide range of clients. I would develop and employ a variety of tools and techniques to perform requested tasks, such as: creating scripts and queries to read, convert and obtain data from a large database and large client user reports, utilize AI tools to debug and navigate communication barriers with a primarily Spanish-speaking clientelle, and perform a variety of database maintenance and validation tasks to ensure that the client information was handled in a very precise and secure manner."
+			"description": "Audit Certification Campaigns: Would validate and convert application user reports into audit certification campaigns, which would ensure clients audits were passed with accurate data in a timely manner.\nDatabase management (primarily MySQL): Navigated large data sources to generate various user, certification, and network log reports, update and maintain client account and application information.\nCode and Scripting (Bash, PHP, and Python): Would create various custom scripts to validate/handle report data, document activities done, and other miscellaneous features.\nBilingual Communication: Remotely communicated with various clients and team members across langauage barriers (Spanish) to ensure requests were fulfilled accurately, often using various translation and AI tools to ensure effective communications."
+			#"description": "I handled a wide range of responsibilities, performing security and audit certification services for a wide range of clients. I would develop and employ a variety of tools and techniques to perform requested tasks, such as: creating scripts and queries to read, convert and obtain data from a large database and large client user reports, utilize AI tools to debug and navigate communication barriers with a primarily Spanish-speaking clientelle, and perform a variety of database maintenance and validation tasks to ensure that the client information was handled in a very precise and secure manner."
 		},
 		{
 			"company":"CodeWizardsHQ",
