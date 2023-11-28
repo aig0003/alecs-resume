@@ -8,11 +8,11 @@ resume = {
 	"name":"ALEC GOODNER",
 	"bio":"Developer with a formal foundation in software engineering and a diverse technical skill set. Committed to learning and growing along with my peers, whether through teaching, coding, art, or other innovative avenues.",
 	"contacts": {
+		"link":"linkedin.com/in/aig0003",
+		"link":"github.com/aig0003",
 		"email":"alec.goodner@gmail.com",
 		"phone":"(404) 771-7074",
-		"city":"Madison, AL",
-		"linkedin":"linkedin.com/in/aig0003",
-		"github":"github.com/aig0003"
+		"city":"Madison, AL"
 	},
 	"careers": [
 		{
