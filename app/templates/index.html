@@ -61,7 +61,7 @@
 							<div class="content auxillary right"><span>
 								{% for key, value in contact.items() %}
 									{% if key == "link" %}
-										<a href={{ key }}>{{ value }}</a>
+										<a href={{ value }}>{{ value }}</a>
 									{% else %}
 										{{ value }}
 									{% endif %}
