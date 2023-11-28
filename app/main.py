@@ -116,16 +116,43 @@ resume = {
 			"AFRAME",
 			"Java",
 			"C++"
-		],
-		"OTHER EXPERIENCES": [
-			"Video Game Design: Created experimental 1st & 3rd person games using Unity3D and Godot 4. Learned how to use C#, GDScript, and game design principles.",
-			"3D printing and modeling: Designed and printed various models and objects using TinkerCAD and Blender. Learned how to use 3D modeling software and hardware.",
-			"Tabletop Game design: Designed and playtested several tabletop games, including TTRPGs, card, and board games. Learned how to create engaging systems, balanced game mechanics and narratives."
-			"Graphic Design: Have created a variety of graphics and other artistic endeavors using Adobe Photoshop and GIMP. Learned visual design principles.",
-			"Raspberry Pi Projects: Experimented with many projects via Raspberry Pi, including PiHole and Plex Media Servers. Learned remote accessing and server management.",
-			"Music Production: Dabbled music creation via Garageband, Logic Pro X, and Audacity. Learned music theory and composition.",
 		]
-	}
+		#,
+		#"OTHER EXPERIENCES": [
+		#	"Video Game Design: Created experimental games using Unity3D and Godot 4. Learned how to use C#, GDScript, and game design principles.",
+		#	"3D printing and modeling: Designed and printed various models and objects using TinkerCAD and Blender. Learned how to use 3D modeling software and hardware.",
+		#	"Tabletop Game design: Designed and playtested several tabletop games, including TTRPGs, card, and board games. Learned how to create engaging systems, balanced game mechanics and narratives."
+		#	"Graphic Design: Have created a variety of graphics and other artistic endeavors using Adobe Photoshop and GIMP. Learned visual design principles.",
+		#	"Raspberry Pi Projects: Experimented with many projects via Raspberry Pi, inlcuding PiHole and Plex Media Servers. Learned remote accessing and server management.",
+		#	"Music Production: Dabbled music creation via Garageband, Logic Pro X, and Audacity. Learned music theory and composition."
+		#]
+	},
+	"otherexperiences": [
+			{
+				"title":"Video Game Design",
+				"description":"Created experimental 1st & 3rd person games using Unity3D and Godot 4. Learned how to use C#, GDScript, and game design principles.",
+			},
+			{
+				"title":"3D printing & Modeling",
+				"description":"Designed and printed various models and objects using TinkerCAD, Cura, and Blender. Learned how to use 3D modeling software and hardware."
+			},
+			{
+				"title":"Tabletop Game Design",
+				"description":"Designed and playtested several tabletop games, including TTRPGs, card, and board games. Learned how to create engaging systems, balanced game mechanics and narratives."
+			},
+			{
+				"title":"Graphic Design",
+				"description":"Have created a variety of graphics and other artistic endeavors using Adobe Photoshop and GIMP. Learned visual design principles."
+			},
+			{
+				"title":"Raspberry Pi Projects",
+				"description":"Experimented with many projects via Raspberry Pi, including PiHole and Plex Media Servers. Learned remote accessing and server management."
+			},
+			{
+				"title":"Music Production",
+				"description":"Dabbled music creation via Garageband, Logic Pro X, and Audacity. Learned music theory and composition."
+			}
+		]
 }
 
 @app.route("/")
