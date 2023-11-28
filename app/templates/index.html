@@ -87,7 +87,11 @@
 					</div>
 					<div class="row">
 						<div class="col">
-							<div class="content left auxillary"><span>{{ career["description"] }}</span></div>
+							<div class="content left auxillary">
+							{% for descriptionitem in career["description"] %}
+								<span> • {{ descriptionitem }}</span>
+							{% endfor %}
+							</div>
 						</div>
 					</div>
 				{% endfor %}
