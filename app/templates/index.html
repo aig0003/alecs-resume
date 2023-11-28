@@ -57,12 +57,16 @@
 			<div class="col contacts">
 				<div class="row">
 					<div class="col">
-						{% for key, contact in resume.contacts.items() %}
-							{% if key == "link" %}
-								<div class="content auxillary right"><span><a href={{ key }}>{{ resume.contacts[contact] }}</a></span></div>
-							{% else %}
-								<div class="content auxillary right"><span>{{ resume.contacts[contact] }}</span></div>
-							{% endif %}
+						{% for contact in resume.contacts %}
+							<div class="content auxillary right"><span>
+								{% for key, value in contact.items() %}
+									{% if key == "link" %}
+										<a href={{ key }}>{{ value }}</a>
+									{% else %}
+										{{ value }}
+									{% endif %}
+								{% endfor %}
+							</span></div>
 						{% endfor %}
 					</div>
 				</div>
