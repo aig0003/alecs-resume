@@ -147,10 +147,31 @@
 
 		</div>
 
-		<!-- OTHER WORK -->
+		<!-- OTHER EXPERIENCES -->
 		<div class="row section">
 			<div class="col" s>
 				<!-- Heading -->
+				<div class="row">
+					<div class="col">
+						<div class="content heading" id="other-work"><span>OTHER EXPERIENCES</span></div>
+					</div>
+				</div>
+				{% for experience in resume.otherexperiences %}
+				<div class="row">
+					<div class="col">
+						<div class="content left primary"><span>{{ experience["title"] }}</span></div>
+						<div class="content left secondary"><span>{{ experience["description"] }}</span></div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+			
+		</div>
+
+		<!-- OTHER WORK -->
+		<!-- <div class="row section">
+			<div class="col" s>
+				<!-- Heading --
 				<div class="row">
 					<div class="col">
 						<div class="content heading" id="other-work"><span>OTHER WORK EXPERIENCE</span></div>
@@ -168,7 +189,7 @@
 				</div>
 				{% endfor %}
 			</div>
-		</div>
+		</div> -->
 		<!--
 		<div class="row section">
 			<div class="col">
