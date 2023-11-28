@@ -11,7 +11,8 @@ resume = {
 		"email":"alec.goodner@gmail.com",
 		"phone":"(404) 771-7074",
 		"city":"Madison, AL",
-		"linkedin":"linkedin.com/in/aig0003"
+		"linkedin":"linkedin.com/in/aig0003",
+		"github":"github.com/aig0003"
 	},
 	"careers": [
 		{
