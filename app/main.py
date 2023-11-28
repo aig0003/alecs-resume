@@ -21,10 +21,10 @@ resume = {
 			"title": "Jr. Software Developer",
 			"dates": "June 2022 - Present",
 	   	 	"description": [
-	   			 "Audit Certification Campaigns: Would validate and convert application user reports into audit certification campaigns, which would ensure clients audits were passed with accurate data in a timely manner.",
-	   			 "Database management (primarily MySQL): Navigated large data sources to generate various user, certification, and network log reports, update and maintain client account and application information.",
-	   			 "Code and Scripting (Bash, PHP, and Python): Would create various custom scripts to validate/handle report data, document activities done, and other miscellaneous features.",
-	   			 "Bilingual Communication: Remotely communicated with various clients and team members across language barriers (Spanish) to ensure requests were fulfilled accurately, often using various translation and AI tools to ensure effective communications."
+	   			 "Would validate and convert application user reports into audit certification campaigns, which would ensure clients audits were passed with accurate data in a timely manner.",
+	   			 "Managed and navigated large data databases, Primarily MySQL, including hundreds of tables, and millions of entries to generate various user, certification, and network log reports, update and maintain client account and application information.",
+	   			 "Created various custom scripts to validate/handle report data, document activities done, and perform other miscellaneous features. Often using Bash, PHP and Python.",
+	   			 "Remotely communicated with various clients and team members across language barriers, with many employees and clientes speaking Spanish primarily, to ensure requests were fulfilled accurately, often using various translation and AI tools to ensure effective communications."
 	   		 ]
 	   			 #"description": "I handled a wide range of responsibilities, performing security and audit certification services for a wide range of clients. I would develop and employ a variety of tools and techniques to perform requested tasks, such as: creating scripts and queries to read, convert and obtain data from a large database and large client user reports, utilize AI tools to debug and navigate communication barriers with a primarily Spanish-speaking clientele, and perform a variety of database maintenance and validation tasks to ensure that the client information was handled in a very precise and secure manner."
 	   	 },
@@ -34,8 +34,8 @@ resume = {
 	   		 "title": "Curriculum Instructor",
 	   		 "dates":"June 2020 - April 2022",
 	   		 "description":[
-	   			 "Full-Stack Instruction: Educated children from K-12 levels various programming languages and concepts through live, online courses. These courses covered a range of materials, dealing with languages such as Java, Python (+Flask), HTML/CSS/JS (+JQuery and other libraries), Scratch & SQL; as well as concepts of database management, front & back-end coding, UI design, and more.",
-	   			 "Curriculum Development: Assisted the curriculum lead in developing new curriculum materials and ensuring release deadlines were met."
+	   			 "Taught children from K-12 levels on full-stack concepts and programming languages through live, online courses. These courses covered a range of materials, dealing with languages such as Java, Python (+Flask), HTML/CSS/JS (+JQuery and other libraries), Scratch & SQL; as well as concepts of database management, front & back-end coding, UI design, and more.",
+	   			 "Assisted in the development of new curriculum materials within tight deadline release schedules. Adhered to strict guidelines to ensure high-quality material with an emphasis on ensuring clear concepts and engaging exercises."
 	   		 ]
 	   		 #"description":"My role was to study, teach, and aid in the development of a full-stack computer programming curriculum aimed to educate children from K-12 levels through live, online courses. I coordinated remotely with several teams to the develop new courses and curriculum materials, provided virtual but high-quality education and feedback to students, and generally assisted the company and fellow instructors.",
 	   	 },
@@ -45,9 +45,9 @@ resume = {
 	   		 "title":"eCommerce Manager",
 	   		 "dates":"July 2019 - January 2020",
 	   		 "description":[    
-	   			 "Manage Store Online Catalog: Maintained the store website to ensure the e-store and product catalog was up-to-date, appealing, and accurate. As well as aid in any technical issues dealing with the online tools.",
-	   			 "eCommerce Fulfillment: Handled the packaging and shipping of store merchandise purchased from the online store, ensuring safe and  timely deliveries to customers.",
-	   			 "Social Media Management: Managed various social media accounts as well as create and optimize advertisement campaigns for new and existing products and specials."
+	   			 "Maintained the store website to ensure the e-store and product catalog was up-to-date, appealing, and accurate. As well as aid in any technical issues dealing with the online tools.",
+	   			 "Handled the packaging and shipping of store merchandise purchased from the online store, ensuring safe and  timely deliveries to customers.",
+	   			 "Managed various social media accounts as well as create and optimize advertisement campaigns for new and existing products and specials."
 	   		 ]
 			#"description":"I personally and remotely communicated with various company departments, staff, and customers to ensure success in company projects. General responsibilities included managing the company online store, product catalogs, optimizing/updating social media pages, designing advertising campaigns, handling customer service, as well as tracking merchandise logistics and shipping products."
 		}
@@ -89,29 +89,25 @@ resume = {
 			"schoolname":"Auburn University",
 			"schooladdress":"152 S College St, Auburn, AL 36849",
 			"schoolphone":"334-844-4000"
-		},
-		{
-			"degree":"High School AP Diploma",
-			"graduationdate":"May 2015",
-			"schoolname":"Foley High School",
-			"schooladdress":"1 Pride Place, Foley, AL 36535",
-			"schoolphone":"251-943-2221"
 		}
+		#,{
+		#	"degree":"High School AP Diploma",
+		#	"graduationdate":"May 2015",
+		#	"schoolname":"Foley High School",
+		#	"schooladdress":"1 Pride Place, Foley, AL 36535",
+		#	"schoolphone":"251-943-2221"
+		#}
 	],
 	"skills": {
 		"SOFTWARE/TOOLS": [
-			"MacOS, Windows 7/10, Linux",
-			"Git/Github",
-			"Microsoft & LibreOffice Suite",
-			"Google Drive (Docs, Sheets, Slides, Forms)",
-			"Adobe Photoshop & Illustrator",
-			"Magento 1.9",
-			"Mailchimp",
-			"Slack",
-			"Shortcut",
-			"Basecamp"
+			"Operating Systems: MacOS, Windows 7/10, Linux (Ubuntu)",
+			"Development Tools: Git/Github",
+			"Office Applications: Microsoft Office, LibreOffice, Google Drive",
+			"Design Applications: Adobe Photoshop & Illustrator",
+			"eCommerce: Magento 1.9, Mailchimp",
+			"Project Management: Slack, Shortcut, Basecamp"
 		],
-		"PROGRAMMING LANGUAGES": [
+		"COMPUTER LANGUAGES": [
 			"Python (Incl. Flask)",
 			"MySQL, SQLite3",
 			"PHP/Perl",
@@ -122,14 +118,12 @@ resume = {
 			"C++"
 		],
 		"OTHER EXPERIENCES": [
-			"Computer Game Design (Unity3D, Godot 4)",
-			"3D Printing & Modeling (TinkerCAD, Blender)",
-			"Graphic Design (Photoshop, GIMP)",
-			"Misc. Raspberry Pi Projects",
-			"Plex Media Server",
-			"Tabletop Game Design (TTRPGS, Card & Board Games)",
-			"Music Production (Garageband, Logic Pro X, Audacity)",
-			"Online Streaming (OBS)"
+			"Video Game Design: Created experimental 1st & 3rd person games using Unity3D and Godot 4. Learned how to use C#, GDScript, and game design principles.",
+			"3D printing and modeling: Designed and printed various models and objects using TinkerCAD and Blender. Learned how to use 3D modeling software and hardware.",
+			"Tabletop Game design: Designed and playtested several tabletop games, including TTRPGs, card, and board games. Learned how to create engaging systems, balanced game mechanics and narratives."
+			"Graphic Design: Have created a variety of graphics and other artistic endeavors using Adobe Photoshop and GIMP. Learned visual design principles.",
+			"Raspberry Pi Projects: Experimented with many projects via Raspberry Pi, including PiHole and Plex Media Servers. Learned remote accessing and server management.",
+			"Music Production: Dabbled music creation via Garageband, Logic Pro X, and Audacity. Learned music theory and composition.",
 		]
 	}
 }
